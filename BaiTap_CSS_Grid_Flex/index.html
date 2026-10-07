@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập CSS Grid & Flexbox</title>
+    <!-- Liên kết chính xác tệp CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. Liên kết "Chuyển đến Nội dung chính" (Skip to main content) -->
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+    <!-- Thanh điều hướng (nav) -->
+    <nav>
+        <img src="images/logo.png" alt="Logo trang web">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Công viên</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Thẻ main với id="main-content" để thẻ 'a' phía trên nhảy tới -->
+    <main id="main-content">
+
+        <h1>Khám phá Công viên Quốc gia</h1>
+
+        <!-- Phần sử dụng Grid -->
+        <section>
+            <h2>Danh sách Công viên (Bố cục Grid)</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/park1.jpg" alt="Cảnh quan công viên 1">
+                    <h3>Công viên A</h3>
+                    <p>Mô tả ngắn gọn về cảnh quan và trải nghiệm tại công viên A.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/park2.jpg" alt="Cảnh quan công viên 2">
+                    <h3>Công viên B</h3>
+                    <p>Mô tả ngắn gọn về cảnh quan và trải nghiệm tại công viên B.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần sử dụng Flexbox -->
+        <section>
+            <h2>Thư viện ảnh (Bố cục Flexbox)</h2>
+            <div class="flex">
+                <div class="flex-item">
+                    <p>Nội dung thẻ Flex 1</p>
+                </div>
+                <div class="flex-item">
+                    <p>Nội dung thẻ Flex 2</p>
+                </div>
+                <div class="flex-item">
+                    <p>Nội dung thẻ Flex 3</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trang web Bố cục CSS</p>
+    </footer>
+
+</body>
+</html>
